@@ -1,10 +1,10 @@
 import './App.css';
-import Navigation from './components/Navigation/Navbar';
+import HeroSection from './components/Hero/HeroSection';
 
 function App() {
   return (
     <div className="App">
-      <Navigation />
+      <HeroSection />
     </div>
   );
 }

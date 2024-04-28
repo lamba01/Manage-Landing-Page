@@ -5,8 +5,8 @@ import logo from '../../assets/logo.svg'
 function Navigation() {
 
   return (
-    <div> <nav className="navbar">
-    <div className="navbar-container containerr">
+    <nav className="navbar">
+    <div className="navbar-container">
       <input type="checkbox" name="" id="" />
       <div className="hamburger-lines">
         <span className="line line1"></span>
@@ -23,7 +23,7 @@ function Navigation() {
        <div className="logo-container"><img src={logo} alt='logo'/></div>
        <button className='nav-button'>Get Started</button>
     </div>
-  </nav></div>
+  </nav>
   )
 }
 
