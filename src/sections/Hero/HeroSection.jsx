@@ -1,24 +1,15 @@
-import { Box, Typography, Button } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import bg from '../../assets/illustration-intro.svg'
-import Navigation from '../Navigation/Navbar'
+import Navigation from '../../components/Navigation/Navbar'
+import CustomButton from '../../components/CustomButton';
+import CustomContainer from '../../components/CustomContainer';
 
 function HeroSection() {
 
   return (
     <div style={{ backgroundColor: '#fff', zIndex: '2'}}>
       <Navigation />
-      <Box
-        sx={{
-          display: 'flex',
-          paddingTop: '120px',
-          gap: '30px',
-          paddingLeft: { xs: '0px', md: '100px' },
-          flexDirection: { xs: 'column', md: 'row' },
-          alignItems: 'center',
-          justifyContent: 'center',
-          width: '100vw',
-        }}
-      >
+      <CustomContainer>
         <Box 
           sx={{ 
             width: { xs: '100%', md: '50%' },
@@ -38,19 +29,15 @@ function HeroSection() {
             Bring everyone together to build better products.
           </Typography>
           <Typography variant='myParagraph' sx={{
-            margin: { xs: '5px 0px', md: '25px 0px' }
+            margin: { xs: '5px 0px', md: '25px 0px' },
+            width: {xs: '100%', md: '70%'}
           }}>
-            Manage makes it simple for software teams to plan <br /> day-to-day tasks while
+            Manage makes it simple for software teams to plan day-to-day tasks while
             keeping the larger team goals in view.
           </Typography>
-          <Button variant='contained' 
-            sx={{
-              padding: '10px 30px', 
-              borderRadius: '30px', 
-              width: 'fit-content',
-              textTransform: 'capitalize'
-            }}
-          >Get Started</Button>
+          <CustomButton>
+            Get Started
+          </CustomButton>
         </Box>
         <Box sx={{
           width:  { xs: '100%', md: '50%' },
@@ -63,7 +50,7 @@ function HeroSection() {
         }}>
           <img src={bg} alt="chart" style={{width: '90%', height: 'auto', maxHeight: '80vh', minHeight: '20vh', margin: '0px', padding: '0px'}} />
         </Box>        
-      </Box>
+      </CustomContainer>
     </div>
   );
 }

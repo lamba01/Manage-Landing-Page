@@ -9,14 +9,14 @@ body {
   margin: 0;
   padding: 0;
   background-color: #888682;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 .navbar input[type="checkbox"],
 .navbar .hamburger-lines {
   display: none;
 }
 .navbar {
-  position: fixed;
+  position: absolute;
   left: 100px;
   top: 0;
   right: 100px;
@@ -81,7 +81,9 @@ body {
 .menu-items li:hover a::before {
   width: 100%;
 }
-
+.overlay {
+  display: none;
+}
 @media (max-width: 1023px) {
   .navbar {
     opacity: 0.95;
@@ -179,6 +181,7 @@ body {
     z-index: 10;
     transition: transform 0.5s ease-in-out;
     transform: translateY(-150%);
+    display: block;
   }
   
   .navbar .menu-items li {

@@ -22,9 +22,14 @@ const theme = createTheme({
     },
     myParagraph: {
       color: 'hsl(227, 12%, 61%)',
-      fontSize: '16px',
-      fontWeight: '600',
+      fontSize: '14px',
+      fontWeight: '400',
     },
+    subHeader: {
+      color: 'hsl(228, 39%, 23%)',
+      fontSize: '16px',
+      fontWeight: 700
+    }
   },
     
 })
