@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #888682;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 .navbar input[type="checkbox"],
 .navbar .hamburger-lines {
@@ -85,6 +85,8 @@ body {
 @media (max-width: 1023px) {
   .navbar {
     opacity: 0.95;
+    left: 65px;
+    right: 65px;
   }
 
   .navbar-container input[type="checkbox"],
@@ -132,6 +134,7 @@ body {
     width: 100%;
     border-radius: 10px;
     background: #333;
+    z-index: 36;
   }
   .navbar-container .hamburger-lines .line1 {
     transform-origin: 0% 0%;
@@ -146,30 +149,47 @@ body {
   }
   .navbar .menu-items {
     background: #fff;
-    max-width: 90%;
+    width: 80%;
     transform: translateY(-150%);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     transition: transform 0.5s ease-in-out;
+    overflow: none;
     box-shadow: -5px 0px 10px 0px #aaa;
-    overflow: scroll;
+    border-radius: 10px;
     position: fixed;
     top: 100px;
     left: 0;
     right: 0;
     margin: auto;
     padding: 15px;
-    height: 35%;
+    height: 30%;
+    z-index: 35;
+  }  
+  .overlay {
+    position: absolute;
+    top: 30vw; /* Start from where the menu items end */
+    left: 0;
+    width: 100vw;
+    margin-left: -65px;
+    height: calc(90vh - 100px); /* Adjust height to exclude navbar height */
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)); /* Gradient from transparent to semi-transparent black */
+    z-index: 10;
+    transition: transform 0.5s ease-in-out;
+    transform: translateY(-150%);
   }
   
   .navbar .menu-items li {
     margin: 0;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 700;
   }
   .navbar-container input[type="checkbox"]:checked ~ .menu-items {
+    transform: translateX(0);
+  }
+  .navbar-container input[type="checkbox"]:checked ~ .overlay {
     transform: translateX(0);
   }
   .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
@@ -193,8 +213,14 @@ body {
   }
 }
 
-@media only screen and (max-width: 520px) {
-  /* .navbar-container input[type="checkbox"]:checked ~ .logo {
-    display: none;
-  } */
+@media (max-width: 767px) {
+  .navbar {
+    left: 20px;
+    right: 20px;
+  }
+  .overlay {
+    margin-left: -20px;
+    height: calc(100vh - 100px);
+  }
+
 }

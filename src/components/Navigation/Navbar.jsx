@@ -13,6 +13,7 @@ function Navigation() {
         <span className="line line2"></span>
         <span className="line line3"></span>
       </div>
+      <div className="overlay"></div>
       <ul className ="menu-items">
        <li>Pricing</li>
        <li>Product</li>

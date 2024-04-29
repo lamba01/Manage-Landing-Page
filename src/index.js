@@ -16,7 +16,7 @@ const theme = createTheme({
   typography: {
     myHeader: {
       color: 'hsl(228, 39%, 23%)',
-      fontSize: '40px',
+      fontSize: '50px',
       fontWeight: '700', 
       margin: 0,
     },
