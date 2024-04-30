@@ -17,7 +17,7 @@ body {
 }
 .navbar {
   position: absolute;
-  left: 100px;
+  left: 70px;
   top: 0;
   right: 100px;
   background: none;
@@ -87,8 +87,8 @@ body {
 @media (max-width: 1023px) {
   .navbar {
     opacity: 0.95;
-    left: 65px;
-    right: 65px;
+    left: 50px;
+    right: 50px;
   }
 
   .navbar-container input[type="checkbox"],

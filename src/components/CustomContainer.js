@@ -1,22 +1,22 @@
 import React from 'react';
-import { Container } from '@mui/material';
+import { Box } from '@mui/material';
 
 function CustomContainer({ children, ...props }) {
   return (
-    <Container 
+    <Box 
       sx={{
+        margin: '100px 0px 0px 0px',
         display: 'flex',
-        paddingTop: '120px',
-        gap: '30px',
-        paddingLeft: { xs: '0px', md: '100px' },
-        flexDirection: { xs: 'column', md: 'row' },
-        alignItems: 'flex-start',
         justifyContent: 'center',
-        width: '100vw',
+        alignItems: 'flex-start',
+        width: '100%',
+        flexDirection: { xs: 'column', md: 'row' },
+        gap: '50px',
+        padding: {xs: '0px 20px', md: '0px 100px'}
       }}
       {...props}>
       {children}
-    </Container>
+    </Box>
   );
 }
 

@@ -33,6 +33,7 @@ function About() {
                 width:  { xs: '100%', md: '50%' },
                 margin: '0px',
                 display: {xs: 'flex', md: 'block'},
+                flexDirection: {xs: 'column', md: 'row'},
                 alignItems: 'center',
                 justifyContent: 'center',
               }}>
@@ -40,45 +41,44 @@ function About() {
                     <CustomButton>
                         01
                     </CustomButton>
-                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '10px' }}>
+                    <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: {xs: '15px', md: '10px'}, marginTop: '5px' }}>
                     <Typography variant='subHeader'>
                         Track company-wide progress
-                    </Typography>
-                   
-                    <Typography variant='myParagraph'>
+                    </Typography>           
+                    <Typography variant='myParagraph' sx={{marginLeft: {xs: '-80px', md: "0px"}}}>
                         See how your day-to-day tasks fit into the wider vision. 
                         Go from tracking progress at the milestone level all the way done to the smallest of details. 
                         Never lose sight of the bigger picture again.
                     </Typography>
-                    </div>  
+                    </Box>  
                 </Container>
                 <Container sx={{display: 'flex', alignItems: 'flex-start', gap: '20px', margin: '40px 0px'}}>
                     <CustomButton>
                         02
                     </CustomButton>
-                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start',gap: '10px' }}>
+                    <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: {xs: '15px', md: '10px'}, marginTop: '5px' }}>
                     <Typography variant='subHeader'>
                         Advanced built-in reports
                     </Typography>
-                    <Typography variant='myParagraph'>
+                    <Typography variant='myParagraph' sx={{marginLeft: {xs: '-80px', md: "0px"}}}>
                         Set internal delivery estimates and track progress toward company goals. 
                         Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed. 
                     </Typography>
-                    </div>
+                    </Box>
                 </Container>
                 <Container sx={{display: 'flex', alignItems: 'flex-start', gap: '20px', margin: '40px 0px'}}>
                     <CustomButton>
                         03
                     </CustomButton>
-                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start',gap: '10px' }}>
+                    <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: {xs: '15px', md: '10px'}, marginTop: '5px' }}>
                     <Typography variant='subHeader'>
                         Everything you need in one place
                     </Typography>
-                    <Typography variant='myParagraph'>
+                    <Typography variant='myParagraph' sx={{marginLeft: {xs: '-80px', md: "0px"}}}>
                         Stop jumping from one service to another to communicate, store files, track tasks and share documents. 
                         Manage offers an all-in-one team productivity solution.
                     </Typography>
-                    </div>
+                    </Box>
                 </Container>
             </Box>
         </CustomContainer>
