@@ -1,8 +1,8 @@
 import { Box, Typography } from '@mui/material';
-import bg from '../../assets/illustration-intro.svg';
-import Navigation from '../../components/Navigation/Navbar';
-import CustomButton from '../../components/CustomButton';
-import CustomContainer from '../../components/CustomContainer';
+import bg from '../assets/illustration-intro.svg';
+import Navigation from '../components/Navigation/Navbar';
+import CustomButton from '../components/CustomButton';
+import CustomContainer from '../components/CustomContainer';
 
 function HeroSection() {
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, Typography, Container } from '@mui/material';
-import CustomButton from '../../components/CustomButton';
-import CustomContainer from '../../components/CustomContainer';
+import CustomButton from '../components/CustomButton';
+import CustomContainer from '../components/CustomContainer';
 
 function About() {
   return (

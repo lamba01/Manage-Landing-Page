@@ -8,7 +8,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #888682;
+  background-color: none;
   overflow-x: hidden;
 }
 .navbar input[type="checkbox"],
