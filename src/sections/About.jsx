@@ -5,7 +5,7 @@ import CustomContainer from '../components/CustomContainer';
 
 function About() {
   return (
-    <div>
+    <Box sx={{margin: {xs: '-70px 0px 0px 0px', md: '100px 0px 0px 0px'}}}>
         <CustomContainer>
             <Box 
               sx={{ 
@@ -37,7 +37,7 @@ function About() {
                 alignItems: 'center',
                 justifyContent: 'center',
               }}>
-                <Container sx={{display: 'flex', alignItems: 'flex-start', gap: '20px', margin: '0px 0px 40px 0px'}}>
+                <Container sx={{display: 'flex', alignItems: 'flex-start', gap: '20px', margin: '0px 0px 20px 0px'}}>
                     <CustomButton>
                         01
                     </CustomButton>
@@ -52,7 +52,7 @@ function About() {
                     </Typography>
                     </Box>  
                 </Container>
-                <Container sx={{display: 'flex', alignItems: 'flex-start', gap: '20px', margin: '40px 0px'}}>
+                <Container sx={{display: 'flex', alignItems: 'flex-start', gap: '20px', margin: '20px 0px'}}>
                     <CustomButton>
                         02
                     </CustomButton>
@@ -66,7 +66,7 @@ function About() {
                     </Typography>
                     </Box>
                 </Container>
-                <Container sx={{display: 'flex', alignItems: 'flex-start', gap: '20px', margin: '40px 0px'}}>
+                <Container sx={{display: 'flex', alignItems: 'flex-start', gap: '20px', margin: '20px 0px'}}>
                     <CustomButton>
                         03
                     </CustomButton>
@@ -82,7 +82,7 @@ function About() {
                 </Container>
             </Box>
         </CustomContainer>
-    </div>
+    </Box>
   )
 }
 

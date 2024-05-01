@@ -6,7 +6,7 @@ function TestimonialContainer({ children }) {
     <Container
     sx={{
         backgroundColor: 'hsl(0, 0%, 98%)',
-        margin: '50px 0px',
+        margin: '50px 10px',
         width: '95%',
         textAlign: 'center',
         display: 'flex',
