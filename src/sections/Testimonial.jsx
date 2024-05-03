@@ -20,7 +20,7 @@ function Testimonial() {
         autoplayspeed: 1000,
         responsive: [
           {
-            breakpoint: 1024, // Adjust breakpoint for your needs
+            breakpoint: 600, // Adjust breakpoint for your needs
             settings: {
                 dots: true,
               slidesToShow: 1,
@@ -34,7 +34,7 @@ function Testimonial() {
       };
     
   return (
-    <Box sx={{width: {xs: '100%', md: '115%'}, margin: {xs: '0px', md: '100px 0px 0px -100px'}, padding: {xs: '0px 20px', md: '0px'}, textAlign: 'center'}}>
+    <Box sx={{width: {xs: '100%', sm: '115%', overflowX: 'hidden', md: '115%'}, margin: { xs: '0px', sm: '100px -7.5% 0px -7.5%', md: '100px -7.5% 0px -7.5%' }, padding: {xs: '0px 20px', md: '0px'}, textAlign: 'center'}}>
         <Typography variant='myHeader' 
              sx={{
                 fontSize: {xs: '20px', md: '30px'}

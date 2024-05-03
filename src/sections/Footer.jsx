@@ -16,7 +16,7 @@ function Footer() {
         width: '100vw',
         margin: '0px',
         flexDirection: { xs: 'column', md: 'row' },
-        padding: {xs: '30px 0px', md: '40px 100px'},
+        padding: {xs: '30px 0px', md: '40px 70px'},
         justifyContent: 'space-between',
         alignItems: 'center',
         position: 'relative',
@@ -41,7 +41,8 @@ function Footer() {
                 order: {xs: '1', md: '2'},
                 display: 'flex',
                 gap: {xs: '50px', md: '10px'},
-                marginTop : '10px'
+                marginTop : '10px',
+                justifyContent: 'center'
             }}>
                 <img src={facebookIcon} alt="facebook" />
                 <img src={youtubeIcon} alt="youtube"/>

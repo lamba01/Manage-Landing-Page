@@ -1,13 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './navbar.css'
 import logo from '../../assets/logo.svg'
 
 function Navigation() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
+    
+    // Toggle the no-scroll class on the body element
+    if (!isMenuOpen) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+  };
 
   return (
     <nav className="navbar">
     <div className="navbar-container">
-      <input type="checkbox" name="" id="" />
+      <input type="checkbox" name="" id="" onChange={handleMenuToggle}/>
       <div className="hamburger-lines">
         <span className="line line1"></span>
         <span className="line line2"></span>

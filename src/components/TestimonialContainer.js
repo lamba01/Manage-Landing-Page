@@ -7,12 +7,13 @@ function TestimonialContainer({ children }) {
     sx={{
         backgroundColor: 'hsl(0, 0%, 98%)',
         margin: '50px 10px',
-        width: '95%',
+        width: '100%',
         textAlign: 'center',
         display: 'flex',
         justifyContent: 'center',
         flexDirection: 'column',
-        alignItems: 'center'
+        overflowX: 'hidden', 
+        alignItems: 'center',
     }}
     >
     {children}

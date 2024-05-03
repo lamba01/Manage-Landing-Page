@@ -19,7 +19,7 @@ body {
   position: absolute;
   left: 70px;
   top: 0;
-  right: 100px;
+  right: 70px;
   background: none;
   color: #000;
   opacity: 0.85;
@@ -169,6 +169,7 @@ body {
     padding: 15px;
     height: 30%;
     z-index: 35;
+    overflow: hidden;
   }  
   .overlay {
     position: absolute;
@@ -178,10 +179,11 @@ body {
     margin-left: -65px;
     height: calc(90vh - 100px); /* Adjust height to exclude navbar height */
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)); /* Gradient from transparent to semi-transparent black */
-    z-index: 10;
+    z-index: 100;
     transition: transform 0.5s ease-in-out;
     transform: translateY(-150%);
     display: block;
+    overflow: hidden;
   }
   
   .navbar .menu-items li {
@@ -214,6 +216,10 @@ body {
     width: 50px;
     height: 50px;
   }
+  .no-scroll {
+    overflow: hidden;
+  }
+  
 }
 
 @media (max-width: 767px) {

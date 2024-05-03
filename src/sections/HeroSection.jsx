@@ -14,7 +14,7 @@ function HeroSection() {
             width: { xs: '100%', md: '50%' },
             display: 'flex', 
             flexDirection: 'column', 
-            order: { xs: '2', md: '1' },
+            order: { xs: '2', sm: '2', md: '1' },
             textAlign: { xs: 'center', md: 'left' },
             alignItems: { xs: 'center', md: 'flex-start' },
             padding: '0px'

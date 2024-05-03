@@ -12,7 +12,7 @@ function CustomContainer({ children, ...props }) {
         width: '100%',
         flexDirection: { xs: 'column', md: 'row' },
         gap: '50px',
-        padding: {xs: '0px 20px', md: '0px 100px'}
+        padding: {xs: '0px 20px', md: '0px 70px'}
       }}
       {...props}>
       {children}
