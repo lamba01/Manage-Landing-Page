@@ -31,6 +31,13 @@ const theme = createTheme({
       fontWeight: 700
     }
   },
+  overrides: {
+    MuiOutlinedInput: {
+      input: {
+        padding: '60px', // Adjust the padding value as needed
+      },
+    },
+  },
     
 })
 
