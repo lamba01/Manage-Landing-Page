@@ -5,7 +5,7 @@ import CustomContainer from '../components/CustomContainer';
 
 function About() {
   return (
-    <Box sx={{margin: {xs: '-70px 0px 0px 0px', md: '100px 0px 0px 0px'}}}>
+    <Box sx={{margin: {xs: '-50px 0px 0px 0px', md: '100px 0px 0px 0px'}}}>
         <CustomContainer>
             <Box 
               sx={{ 

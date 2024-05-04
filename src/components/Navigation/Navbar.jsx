@@ -25,7 +25,7 @@ function Navigation() {
         <span className="line line2"></span>
         <span className="line line3"></span>
       </div>
-      <div className="overlay"></div>
+      <div className="overlay" onClick={handleMenuToggle}></div>
       <ul className ="menu-items">
        <li>Pricing</li>
        <li>Product</li>

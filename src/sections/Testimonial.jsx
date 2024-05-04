@@ -34,7 +34,7 @@ function Testimonial() {
       };
     
   return (
-    <Box sx={{width: {xs: '100%', sm: '115%', overflowX: 'hidden', md: '115%'}, margin: { xs: '0px', sm: '100px -7.5% 0px -7.5%', md: '100px -7.5% 0px -7.5%' }, padding: {xs: '0px 20px', md: '0px'}, textAlign: 'center'}}>
+    <Box sx={{width: {xs: '100%', sm: '115%', overflowX: 'hidden', md: '115%'}, margin: { xs: '30px 0px 0px 0px', sm: '100px -7.5% 0px -7.5%', md: '100px -7.5% 0px -7.5%' }, padding: {xs: '0px 20px', md: '0px'}, textAlign: 'center'}}>
         <Typography variant='myHeader' 
              sx={{
                 fontSize: {xs: '20px', md: '30px'}

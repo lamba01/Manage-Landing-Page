@@ -15,12 +15,12 @@ function Footer() {
         color: 'white',
         width: '100vw',
         margin: '0px',
-        flexDirection: { xs: 'column', md: 'row' },
-        padding: {xs: '30px 0px', md: '40px 70px'},
+        flexDirection:{ xs: 'column', md: 'row' },
+        padding: {xs: '50px 0px', md: '40px 70px'},
         justifyContent: 'space-between',
         alignItems: 'center',
         position: 'relative',
-        gap: {xs: '20px'}
+        gap: {xs: '30px'}
     }}>
 
         <Box sx={{
@@ -28,7 +28,7 @@ function Footer() {
             flexDirection: 'column',
             justifyContent: 'space-between',
             alignItems: 'center',
-            gap: {xs: '30px', md: '60px'},
+            gap: {xs: '50px', md: '60px'},
             order: {xs: '3', md: '1'}
         }}>
             <Box sx={{

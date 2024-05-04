@@ -5,7 +5,7 @@ import { Typography } from '@mui/material'
 
 function Banner() {
   return (
-    <CustomContainer style={{backgroundColor: 'hsl(12, 88%, 59%)', gap: '10px', paddingTop: '50px', paddingBottom: '50px', alignItems: 'center', justifyContent: 'space-between'}}>
+    <CustomContainer style={{backgroundColor: 'hsl(12, 88%, 59%)', gap: '10px', paddingTop: '50px', paddingBottom: '50px', alignItems: 'center', justifyContent: 'space-between' }}>
         <Typography sx={{
             fontSize: {xs: '20px', md: '40px'},
             color: '#fff',
